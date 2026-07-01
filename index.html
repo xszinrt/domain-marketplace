@@ -164,7 +164,7 @@
 <header>
   <div class="eyebrow">دفتر المزاد — نُسخة تجريبية</div>
   <h1>سوق النطاقات</h1>
-  <p class="subtitle">ثلاثة نطاقات معروضة، مرتّبة كسجل مزاد. البيانات تُقرأ من ملف domains.json.</p>
+  <p class="subtitle">ثلاثة نطاقات معروضة، مرتّبة كسجل مزاد. البيانات تُقرأ من ملف domains-data.html.</p>
 </header>
 
 <main>
@@ -179,9 +179,24 @@ async function loadDomains(){
   const statusEl = document.getElementById('status');
   const lotsEl = document.getElementById('lots');
   try{
-    const res = await fetch('domains.json');
+    const res = await fetch('domains-data.html');
     if(!res.ok) throw new Error('تعذّر تحميل الملف');
-    const domains = await res.json();
+    const htmlText = await res.text();
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(htmlText, 'text/html');
+    const articles = Array.from(doc.querySelectorAll('.domain-lot'));
+
+    const domains = articles.map(a => ({
+      lot: a.dataset.lot,
+      domain: a.dataset.domain,
+      extension: a.dataset.extension,
+      category: a.dataset.category,
+      price: a.dataset.price,
+      currency: a.dataset.currency,
+      status: a.dataset.status,
+      description: a.querySelector('.description')?.textContent.trim() || ''
+    }));
+
     statusEl.style.display = 'none';
 
     domains.forEach((d, i) => {
