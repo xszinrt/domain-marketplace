@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "AI-Cloud.com",
+    "price": 2999,
+    "description": "نطاق مثالي لشركات الذكاء الاصطناعي والحوسبة السحابية",
+    "category": "تقنية",
+    "status": "متاح"
+  },
+  {
+    "id": 2,
+    "name": "HealthHub.io",
+    "price": 4500,
+    "description": "نطاق طبي احترافي لمنصات الرعاية الصحية",
+    "category": "طبية",
+    "status": "متاح"
+  },
+  {
+    "id": 3,
+    "name": "EduSmart.org",
+    "price": 1200,
+    "description": "نطاق تعليمي مثالي لمنصات التعلم الإلكتروني",
+    "category": "تعليمية",
+    "status": "متاح"
+  },
+  {
+    "id": 4,
+    "name": "FinancePro.net",
+    "price": 3800,
+    "description": "نطاق مالي احترافي للخدمات المصرفية والاستثمار",
+    "category": "مالية",
+    "status": "محجوز"
+  },
+  {
+    "id": 5,
+    "name": "RealEstate.tech",
+    "price": 2100,
+    "description": "نطاق عقاري بتقنية حديثة",
+    "category": "عقارات",
+    "status": "متاح"
+  }
+]
