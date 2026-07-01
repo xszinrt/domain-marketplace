@@ -1,42 +1,32 @@
 [
   {
-    "id": 1,
-    "name": "AI-Cloud.com",
-    "price": 2999,
-    "description": "نطاق مثالي لشركات الذكاء الاصطناعي والحوسبة السحابية",
+    "lot": "01",
+    "domain": "ExampleOne.com",
+    "extension": ".com",
     "category": "تقنية",
-    "status": "متاح"
+    "price": "2,500",
+    "currency": "USD",
+    "status": "متاح",
+    "description": "نطاق تجريبي قصير وسهل التذكر، مناسب لمشاريع تقنية ناشئة."
   },
   {
-    "id": 2,
-    "name": "HealthHub.io",
-    "price": 4500,
-    "description": "نطاق طبي احترافي لمنصات الرعاية الصحية",
-    "category": "طبية",
-    "status": "متاح"
+    "lot": "02",
+    "domain": "SampleShop.store",
+    "extension": ".store",
+    "category": "تجارة إلكترونية",
+    "price": "850",
+    "currency": "USD",
+    "status": "متاح",
+    "description": "نطاق تجريبي يناسب متاجر التجارة الإلكترونية الجديدة."
   },
   {
-    "id": 3,
-    "name": "EduSmart.org",
-    "price": 1200,
-    "description": "نطاق تعليمي مثالي لمنصات التعلم الإلكتروني",
-    "category": "تعليمية",
-    "status": "متاح"
-  },
-  {
-    "id": 4,
-    "name": "FinancePro.net",
-    "price": 3800,
-    "description": "نطاق مالي احترافي للخدمات المصرفية والاستثمار",
-    "category": "مالية",
-    "status": "محجوز"
-  },
-  {
-    "id": 5,
-    "name": "RealEstate.tech",
-    "price": 2100,
-    "description": "نطاق عقاري بتقنية حديثة",
-    "category": "عقارات",
-    "status": "متاح"
+    "lot": "03",
+    "domain": "DemoAI.ai",
+    "extension": ".ai",
+    "category": "ذكاء اصطناعي",
+    "price": "6,200",
+    "currency": "USD",
+    "status": "قيد المزايدة",
+    "description": "نطاق تجريبي ضمن فئة .ai المطلوبة بقوة في السوق حاليًا."
   }
 ]
