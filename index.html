@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سوق النطاقات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- رأس الصفحة -->
+    <header>
+        <div class="container">
+            <h1>🏷️ سوق النطاقات</h1>
+            <p class="subtitle">اكتشف أفضل النطاقات المتاحة للبيع</p>
+        </div>
+    </header>
+
+    <!-- شريط البحث والتصفية -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-row">
+                <input type="text" id="searchInput" placeholder="🔍 ابحث عن نطاق..." oninput="filterDomains()">
+                
+                <div class="category-filters">
+                    <button class="category-btn active" data-category="all" onclick="filterByCategory('all')">الكل</button>
+                    <button class="category-btn" data-category="تقنية" onclick="filterByCategory('تقنية')">💻 تقنية</button>
+                    <button class="category-btn" data-category="طبية" onclick="filterByCategory('طبية')">🏥 طبية</button>
+                    <button class="category-btn" data-category="تعليمية" onclick="filterByCategory('تعليمية')">📚 تعليمية</button>
+                    <button class="category-btn" data-category="مالية" onclick="filterByCategory('مالية')">💰 مالية</button>
+                    <button class="category-btn" data-category="عقارات" onclick="filterByCategory('عقارات')">🏠 عقارات</button>
+                </div>
+
+                <div class="price-filter">
+                    <input type="number" id="minPrice" placeholder="أقل سعر" oninput="filterDomains()">
+                    <span> - </span>
+                    <input type="number" id="maxPrice" placeholder="أقصى سعر" oninput="filterDomains()">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- عرض البطاقات -->
+    <section class="domains">
+        <div class="container">
+            <div id="stats" class="stats"></div>
+            <div id="domainsContainer" class="domains-grid"></div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="container">
+            <p>© 2026 سوق النطاقات - جميع الحقوق محفوظة</p>
+            <p class="note">للتواصل: example@email.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
